@@ -1,3 +1,17 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: green;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
 body{
     margin: 0;
     padding: 0;
@@ -5,6 +19,20 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
 }
+.bg-test{
+    background: #0062cc;
+}
+.login-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.no-border {
+    border: 0;
+    box-shadow: none !important; /* You may want to include this as bootstrap applies these styles too */
+}
+
 
 @font-face{
     font-family: "Quicksand";
@@ -268,7 +296,7 @@ br {
     text-decoration: none;
     width: 100%;
     color: #fff;
-    font-family: font-family: 'Quicksan', sans-serif;;
+    font-family: 'Quicksan', sans-serif;;
     font-size: 14px;
     display: block;
     overflow: hidden;

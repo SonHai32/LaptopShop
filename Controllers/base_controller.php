@@ -3,7 +3,7 @@ class BaseController{
     protected $folder;
 
     function render($file, $data = array()){
-        $view_file = 'Views/' . $this->folder . '/' . $file . '.html';
+        $view_file = 'Views/' . $this->folder . '/' . $file . '.php';
         if(is_file($view_file)){
             extract($data);
             ob_start();

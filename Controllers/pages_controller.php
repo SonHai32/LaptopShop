@@ -8,11 +8,6 @@
         }
 
         public function home(){
-            $data = array(
-                'name' => 'Hai',
-            );
-           
-            
             $this->render('home');
         }
 
@@ -26,6 +21,13 @@
 
         public function Pants(){
             $this->render('Pants');
+        }
+        public function login(){
+            $this->render('login');
+        }
+
+        public function register(){
+            $this->render('register');
         }
 
     }
